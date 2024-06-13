@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} /*reset ก่อน*/
+
+nav {
+   display: flex; /*รวมเป็นelementเดียว*/
+   justify-content: space-between;/*แยกไปซ้ายขวา*/
+   padding: 40px;/*ระยะห่าง*/
+}
+.Logo a {
+    text-decoration: none; /*ลบเส้นใต้*/
+    color: #616061; 
+    font-weight: bold; /*ตัวหนา*/
+    font-size: 50px;
+    margin-inline-start: 20%;
+}
+
+.Menu {
+    display: flex;
+    list-style: none; /*เอาจุดหน้าข้อความออก*/
+}
+
+.Menu li {
+    margin-left: 50px;/*ระยะห่าง*/
+    padding-top: 2%;
+    font-size: 230%;
+}
+
+.Menu li a {
+    text-decoration: none;
+    color: #716d6f;
+    margin-inline-end: 100px;/*ระยะห่าง*/
+}
+
+.banner {
+    background-color: rgb(163, 162, 163);
+    display: flex; /*รวมเป็นกล่องนึง*/
+    justify-content: center; /*ปรับมาตรงกลางแกนx*/
+    align-items: center; /*ปรับมาตรงกลางแกนy*/
+}
+
+.banner-center{
+    padding: 4%;
+}
+
+.banner-center img{
+    width: 900px;
+    border-radius: 90%;   /*ครอปรูปเลขมากก้กลม*/
+    margin-bottom: 10%;
+}
+
+.banner-center h1 {
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+}
+
+.banner-center p {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 8%;
+}
+
+main{
+    display: grid; /*สร้างเป็นช่องๆ*/
+    grid-template-columns: repeat(3,1fr); /*3ช่อง*/
+}
+
+main div{
+    padding: 20px; /*ระยะห่าง*/
+    padding-top: 3%;
+}
+
+
+main div h2{
+    font-size: 400%;
+    padding-bottom: 2%;
+}
+
+main div p{
+    font-size: 300%;
+}
+
+main img{
+    width: 70%; /*กำหนดขนาดภาพให้เท่าgridมันจะพอดี*/
+    border-radius: 20px;
+    padding-bottom: 2%;
+}
+
+footer{
+    background-color: rgb(171, 171, 171);
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    text-align: center;
+    font-size: 250%;
+}   
